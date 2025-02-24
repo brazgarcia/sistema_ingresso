@@ -5,7 +5,7 @@ function comprar() {
     let qtd = parseInt(document.getElementById('qtd').value);
 
     // Validador de quantidade positiva.
-    if(qtd <= 0){
+    if(qtd <= 0 || isNaN(qtd)){
 
         alert('quantidade inserida não é válida.');
         document.getElementById('qtd').value = '';
